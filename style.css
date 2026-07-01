@@ -1,54 +1,72 @@
-.calculator{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: aliceblue;
+.calculator {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: aliceblue;
+	font-family: Arial, sans-serif;
+}
 
+.calculator_body {
+	background-color: black;
+	padding: 10px;
+	border-radius: 10px;
+	width: 240px;
 }
-.calculator_body{
-    background-color: black;
-    padding:10px ;
-    border-radius: 10px;
-    width:230px;
 
+.numbers {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
 }
-.numbers{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
 
+.numbers button,
+.numbers-btn button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 1.2rem;
+	background-color: rgb(70, 69, 69);
+	color: white;
+	border: none;
+	cursor: pointer;
+}
 
+.numbers button:hover,
+.numbers-btn button:hover {
+	background-color: rgb(100, 98, 98);
 }
-.numbers button, .numbers-btn button{
- width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    background-color: rgba(70,69,69);
-    color: white;
-    border: none;
-}
-.numbers-btn{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    gap: 10px;
-    padding-top: 10px;
-}
-.numbers-btn button:last-child{
-    width: 100px;
-    border-radius: 25px;
-}
-.output{
-    background-color: rgb(100, 98, 98);
-    height: 120px;
-    margin: 10px;
-    color:white ;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    text-align: end;
-    font-size: 2rem;
-    display: grid;
 
+.numbers-btn {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	gap: 10px;
+	padding-top: 10px;
+}
+
+.numbers-btn button:last-child {
+	width: 110px;
+	border-radius: 25px;
+	background-color: orange;
+}
+
+.output {
+	background-color: rgb(40, 40, 40);
+	height: 120px;
+	margin: 10px;
+	padding: 10px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: end;
+	font-size: 1.5rem;
+	word-wrap: break-word;
+	word-break: break-all;
+	border-radius: 5px;
+}
+
+.previous-operand {
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.7);
 }
