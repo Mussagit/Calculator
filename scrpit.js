@@ -43,7 +43,7 @@ numberButtons.forEach((button) => {
 operationButtons.forEach((operation) => {
 	operation.addEventListener("click", () => {
 		let opText = operation.innerText;
-		if (operation.querySelector("sup")) opText = "xy"; // X^y ለሚለው ቁልፍ
+		if (operation.querySelector("sup")) opText = "xy"; 
 
 		if (
 			currentOperand.innerText !== "" &&
